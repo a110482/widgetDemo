@@ -10,6 +10,7 @@
 		06139F322BEDF1BA00C811C1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 06139F312BEDF1BA00C811C1 /* SnapKit */; };
 		06139F352BEDF52800C811C1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 06139F342BEDF52800C811C1 /* RxCocoa */; };
 		06139F372BEDF52E00C811C1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 06139F362BEDF52E00C811C1 /* RxSwift */; };
+		06470FD72C0DB53900C26E10 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06470FD62C0DB53900C26E10 /* Preview.swift */; };
 		064DDB7B2BE87D0400D8CE79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB7A2BE87D0400D8CE79 /* AppDelegate.swift */; };
 		064DDB7D2BE87D0400D8CE79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB7C2BE87D0400D8CE79 /* SceneDelegate.swift */; };
 		064DDB7F2BE87D0400D8CE79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB7E2BE87D0400D8CE79 /* ViewController.swift */; };
@@ -19,6 +20,13 @@
 		064DDB922BE87D0500D8CE79 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB912BE87D0500D8CE79 /* DemoTests.swift */; };
 		064DDB9C2BE87D0500D8CE79 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB9B2BE87D0500D8CE79 /* DemoUITests.swift */; };
 		064DDB9E2BE87D0500D8CE79 /* DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064DDB9D2BE87D0500D8CE79 /* DemoUITestsLaunchTests.swift */; };
+		06DF4AC72C2D55A4008D849D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DF4AC62C2D55A4008D849D /* WidgetKit.framework */; };
+		06DF4AC92C2D55A4008D849D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DF4AC82C2D55A4008D849D /* SwiftUI.framework */; };
+		06DF4ACC2C2D55A4008D849D /* wedigetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF4ACB2C2D55A4008D849D /* wedigetBundle.swift */; };
+		06DF4AD02C2D55A4008D849D /* wediget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF4ACF2C2D55A4008D849D /* wediget.swift */; };
+		06DF4AD22C2D55A4008D849D /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF4AD12C2D55A4008D849D /* AppIntent.swift */; };
+		06DF4AD42C2D55A5008D849D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF4AD32C2D55A5008D849D /* Assets.xcassets */; };
+		06DF4AD82C2D55A5008D849D /* wedigetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 06DF4AC52C2D55A4008D849D /* wedigetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +44,31 @@
 			remoteGlobalIDString = 064DDB762BE87D0400D8CE79;
 			remoteInfo = Demo;
 		};
+		06DF4AD62C2D55A5008D849D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 064DDB6F2BE87D0400D8CE79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06DF4AC42C2D55A4008D849D;
+			remoteInfo = wedigetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		06DF4AD92C2D55A6008D849D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				06DF4AD82C2D55A5008D849D /* wedigetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06470FD62C0DB53900C26E10 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		064DDB772BE87D0400D8CE79 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		064DDB7A2BE87D0400D8CE79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		064DDB7C2BE87D0400D8CE79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +82,14 @@
 		064DDB972BE87D0500D8CE79 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		064DDB9B2BE87D0500D8CE79 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		064DDB9D2BE87D0500D8CE79 /* DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06DF4AC52C2D55A4008D849D /* wedigetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wedigetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DF4AC62C2D55A4008D849D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		06DF4AC82C2D55A4008D849D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		06DF4ACB2C2D55A4008D849D /* wedigetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wedigetBundle.swift; sourceTree = "<group>"; };
+		06DF4ACF2C2D55A4008D849D /* wediget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wediget.swift; sourceTree = "<group>"; };
+		06DF4AD12C2D55A4008D849D /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		06DF4AD32C2D55A5008D849D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06DF4AD52C2D55A5008D849D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +117,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06DF4AC22C2D55A4008D849D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DF4AC92C2D55A4008D849D /* SwiftUI.framework in Frameworks */,
+				06DF4AC72C2D55A4008D849D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		06139F302BEDF1BA00C811C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06DF4AC62C2D55A4008D849D /* WidgetKit.framework */,
+				06DF4AC82C2D55A4008D849D /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +144,7 @@
 				064DDB792BE87D0400D8CE79 /* Demo */,
 				064DDB902BE87D0500D8CE79 /* DemoTests */,
 				064DDB9A2BE87D0500D8CE79 /* DemoUITests */,
+				06DF4ACA2C2D55A4008D849D /* wediget */,
 				064DDB782BE87D0400D8CE79 /* Products */,
 				06139F302BEDF1BA00C811C1 /* Frameworks */,
 			);
@@ -106,6 +156,7 @@
 				064DDB772BE87D0400D8CE79 /* Demo.app */,
 				064DDB8D2BE87D0500D8CE79 /* DemoTests.xctest */,
 				064DDB972BE87D0500D8CE79 /* DemoUITests.xctest */,
+				06DF4AC52C2D55A4008D849D /* wedigetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +167,7 @@
 				064DDB7A2BE87D0400D8CE79 /* AppDelegate.swift */,
 				064DDB7C2BE87D0400D8CE79 /* SceneDelegate.swift */,
 				064DDB7E2BE87D0400D8CE79 /* ViewController.swift */,
+				06470FD62C0DB53900C26E10 /* Preview.swift */,
 				064DDB802BE87D0400D8CE79 /* Main.storyboard */,
 				064DDB832BE87D0500D8CE79 /* Assets.xcassets */,
 				064DDB852BE87D0500D8CE79 /* LaunchScreen.storyboard */,
@@ -141,6 +193,18 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		06DF4ACA2C2D55A4008D849D /* wediget */ = {
+			isa = PBXGroup;
+			children = (
+				06DF4ACB2C2D55A4008D849D /* wedigetBundle.swift */,
+				06DF4ACF2C2D55A4008D849D /* wediget.swift */,
+				06DF4AD12C2D55A4008D849D /* AppIntent.swift */,
+				06DF4AD32C2D55A5008D849D /* Assets.xcassets */,
+				06DF4AD52C2D55A5008D849D /* Info.plist */,
+			);
+			path = wediget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,10 +215,12 @@
 				064DDB732BE87D0400D8CE79 /* Sources */,
 				064DDB742BE87D0400D8CE79 /* Frameworks */,
 				064DDB752BE87D0400D8CE79 /* Resources */,
+				06DF4AD92C2D55A6008D849D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06DF4AD72C2D55A5008D849D /* PBXTargetDependency */,
 			);
 			name = Demo;
 			packageProductDependencies = (
@@ -202,6 +268,23 @@
 			productReference = 064DDB972BE87D0500D8CE79 /* DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		06DF4AC42C2D55A4008D849D /* wedigetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06DF4ADC2C2D55A6008D849D /* Build configuration list for PBXNativeTarget "wedigetExtension" */;
+			buildPhases = (
+				06DF4AC12C2D55A4008D849D /* Sources */,
+				06DF4AC22C2D55A4008D849D /* Frameworks */,
+				06DF4AC32C2D55A4008D849D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wedigetExtension;
+			productName = wedigetExtension;
+			productReference = 06DF4AC52C2D55A4008D849D /* wedigetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +305,9 @@
 					064DDB962BE87D0500D8CE79 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 064DDB762BE87D0400D8CE79;
+					};
+					06DF4AC42C2D55A4008D849D = {
+						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
@@ -245,6 +331,7 @@
 				064DDB762BE87D0400D8CE79 /* Demo */,
 				064DDB8C2BE87D0500D8CE79 /* DemoTests */,
 				064DDB962BE87D0500D8CE79 /* DemoUITests */,
+				06DF4AC42C2D55A4008D849D /* wedigetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +361,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06DF4AC32C2D55A4008D849D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DF4AD42C2D55A5008D849D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,6 +378,7 @@
 			files = (
 				064DDB7F2BE87D0400D8CE79 /* ViewController.swift in Sources */,
 				064DDB7B2BE87D0400D8CE79 /* AppDelegate.swift in Sources */,
+				06470FD72C0DB53900C26E10 /* Preview.swift in Sources */,
 				064DDB7D2BE87D0400D8CE79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +400,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06DF4AC12C2D55A4008D849D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06DF4AD22C2D55A4008D849D /* AppIntent.swift in Sources */,
+				06DF4AD02C2D55A4008D849D /* wediget.swift in Sources */,
+				06DF4ACC2C2D55A4008D849D /* wedigetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -316,6 +422,11 @@
 			isa = PBXTargetDependency;
 			target = 064DDB762BE87D0400D8CE79 /* Demo */;
 			targetProxy = 064DDB982BE87D0500D8CE79 /* PBXContainerItemProxy */;
+		};
+		06DF4AD72C2D55A5008D849D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06DF4AC42C2D55A4008D849D /* wedigetExtension */;
+			targetProxy = 06DF4AD62C2D55A5008D849D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -461,6 +572,7 @@
 		064DDBA22BE87D0500D8CE79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,7 +585,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +602,7 @@
 		064DDBA32BE87D0500D8CE79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,7 +615,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +701,60 @@
 			};
 			name = Release;
 		};
+		06DF4ADA2C2D55A6008D849D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 473T6T639P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wediget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wediget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elijah.Demo.wediget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06DF4ADB2C2D55A6008D849D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 473T6T639P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wediget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wediget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elijah.Demo.wediget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -623,6 +790,15 @@
 			buildConfigurations = (
 				064DDBA82BE87D0500D8CE79 /* Debug */,
 				064DDBA92BE87D0500D8CE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06DF4ADC2C2D55A6008D849D /* Build configuration list for PBXNativeTarget "wedigetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06DF4ADA2C2D55A6008D849D /* Debug */,
+				06DF4ADB2C2D55A6008D849D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
