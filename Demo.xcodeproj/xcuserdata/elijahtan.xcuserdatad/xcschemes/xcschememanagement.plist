@@ -51,14 +51,19 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>wedigetExtension.xcscheme_^#shared#^_</key>
+		<key>widgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>06451C602C31472500469442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>064DDB762BE87D0400D8CE79</key>
 		<dict>
 			<key>primary</key>

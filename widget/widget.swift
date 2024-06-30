@@ -1,8 +1,8 @@
 //
-//  wediget.swift
-//  wediget
+//  widget.swift
+//  widget
 //
-//  Created by ElijahTan on 2024/6/27.
+//  Created by 譚培成 on 2024/6/30.
 //
 
 import WidgetKit
@@ -14,35 +14,17 @@ struct SimpleEntry: TimelineEntry {
     let providerInfo: String
 }
 
-// view 的外觀
-struct wedigetEntryView : View {
-    var entry: SimpleEntry
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text("喵喵:3")
-            Spacer()
-            Text("喵")
-            Spacer()
-            Text(entry.providerInfo)
-        }
-        .containerBackground(.clear, for: .widget)
-    }
-}
-
 // 轉換成 Widget (把 view 跟 model 丟進去)
-struct wediget: Widget {
+struct MyWidget: Widget {
     let kind: String = "wediget"
     
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: ViewSizeTimelineProvider()) { entry in
-            wedigetEntryView(entry: entry)
+            WidgetEntryView(entry: entry)
         }
         .configurationDisplayName("View Size Widget")
         .description("This is a demo widget.")
         .supportedFamilies([
-            .systemSmall,
-            .systemMedium,
             .systemLarge,
         ])
     }
@@ -65,14 +47,15 @@ struct ViewSizeTimelineProvider: TimelineProvider {
     
     // 真正運作的時候
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        let entry = SimpleEntry(date: Date(), providerInfo: "timeline")
+        let value = (UserDefaults.appGroup.object(forKey: UserDefaults.keys.test) as? String) ?? "nil"
+        let entry = SimpleEntry(date: Date(), providerInfo: value)
         let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
     }
 }
 
 #Preview(as: .systemMedium) {
-    wediget()
+    MyWidget()
 } timeline: {
     SimpleEntry(date: .now, providerInfo: "1")
     SimpleEntry(date: .now, providerInfo: "2")
