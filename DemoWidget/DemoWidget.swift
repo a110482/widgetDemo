@@ -43,8 +43,10 @@ struct DemoWidgetEntryView : View {
         VStack {
             Text("Time:")
             Text(entry.date, style: .time)
-
+            
             Text("Favorite Emoji:")
+            // joanna: 我把 favoriteEmojiValue 改計算屬性
+            // 只有生成 view 的時候才會呼叫
             Text(entry.configuration.favoriteEmojiValue)
         }
     }
