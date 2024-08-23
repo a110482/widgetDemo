@@ -14,16 +14,26 @@ struct Provider: AppIntentTimelineProvider {
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+        // joanna: configuration 就是系統給你的緩存
+        var conf = ConfigurationAppIntent()
+        // 我家了 isSnapShot 以後 就可以控制要顯示啥了
+        conf.isSnapShot = true
+        return SimpleEntry(date: Date(), configuration: conf)
     }
     
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
+        print(#function)
         var entries: [SimpleEntry] = []
 
         let currentDate = Date()
-        for hourOffset in stride(from: 0, to: 30, by: 3){
+        for hourOffset in 0 ..< 5 {
+            ConfigurationAppIntent.val += 1
+            let con = ConfigurationAppIntent()
+            con.favoriteEmoji = String(ConfigurationAppIntent.val)
+            
             let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            
+            let entry = SimpleEntry(date: entryDate, configuration: con)
             entries.append(entry)
         }
 
@@ -45,8 +55,6 @@ struct DemoWidgetEntryView : View {
             Text(entry.date, style: .time)
             
             Text("Favorite Emoji:")
-            // joanna: 我把 favoriteEmojiValue 改計算屬性
-            // 只有生成 view 的時候才會呼叫
             Text(entry.configuration.favoriteEmojiValue)
         }
     }
